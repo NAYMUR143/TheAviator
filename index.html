@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BuyTicket</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+	type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<script type="text/javascript" src="js/three.min.js"></script>
+	<script src="js/main_step2.js"></script>
+	<style>
+		body #cdawrap {
+			background: none;
+			border: 1px solid #d1b790;
+			top: auto;
+			bottom: 12px;
+			left: 12px;
+			right: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="cursor"></div>
+
+	<div class="world" id="world"></div>
+	<section>
+		<nav>
+			<span></span>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Servic center</a></li>
+				<li><a href="#">Station</a></li>
+				<li><a href="#">About us</a></li>
+			</ul>
+		</nav>
+		<h1>Want to Fly</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore fugiat perferendis atque
+			natus,
+			sit
+			porro numquam illo necessitatibus, commodi et ex nihil quo libero error fugit. Magnam ut distinctio
+			qui
+			libero dignissimos ad optio minus soluta repellat, vel veniam eos fuga. Quidem veniam explicabo quis
+			officia, animi voluptatum vel!</p>
+
+		<a href="#" class="book">Ticket Booking </a>
+		<div class="social">
+			<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-twitter"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+			<a href="#"><i class="fab fa-linkedin-in"></i></a>
+		</div>
+		</div>
+	</section>
+	<script>
+		let mouseCursor = document.querySelector('.cursor');
+		let navLinks = document.querySelectorAll('a');
+
+		window.addEventListener('mousemove', cursor);
+		function cursor(e) {
+			mouseCursor.style.top = e.pageY + "px";
+			mouseCursor.style.left = e.pageX + "px";
+		}
+		navLinks.forEach(link => {
+			link.addEventListener('mouseleave', () => {
+				mouseCursor.classList.remove("link_grow");
+			});
+			link.addEventListener('mouseover', () => {
+				mouseCursor.classList.add("link_grow");
+			});
+		})
+
+	</script>
+</body>
+
+</html>

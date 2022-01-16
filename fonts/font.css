@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'BillionDreams-vmgK9';
+  src: url('BillionDreams-vmgK9.eot');
+  src: url('BillionDreams-vmgK9.eot?#iefix') format('embedded-opentype'),
+       url('BillionDreams-vmgK9.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BillionDreams';
+  src: url('BillionDreams.svg#BillionDreams') format('svg'),
+       url('BillionDreams.ttf') format('truetype'),
+       url('BillionDreams.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
